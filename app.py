@@ -21,11 +21,12 @@ def app_api():
     }
 
     date = datetime.utcnow()
+    utc_time = datetime.isoformat(date).split(".")[0]
 
     response = {
         "slack_name": slack_name,
         "current_day": weekdays[date.weekday()],
-        "utc_time": datetime.isoformat(date.time()),
+        "utc_time": utc_time,
         "track": track,
         "github_file_url": "https://github.com/Ifechukwu001/hng-stage_one/blob/main/app.py",
         "github_repo_url": "https://github.com/Ifechukwu001/hng-stage_one",
