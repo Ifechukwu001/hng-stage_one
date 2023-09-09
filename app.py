@@ -27,7 +27,7 @@ def app_api():
         "current_day": weekdays[date.weekday()],
         "utc_time": datetime.isoformat(date.time()),
         "track": track,
-        "github_file_url": "",
+        "github_file_url": "https://github.com/Ifechukwu001/hng-stage_one/blob/main/app.py",
         "github_repo_url": "https://github.com/Ifechukwu001/hng-stage_one",
         "status_code": 200
     }
