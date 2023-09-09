@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
-@app.route("/stage-one-api")
+@app.route("/api")
 def app_api():
     """JSON API"""
     slack_name = request.args.get("slack_name")
