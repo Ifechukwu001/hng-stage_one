@@ -26,7 +26,7 @@ def app_api():
     response = {
         "slack_name": slack_name,
         "current_day": weekdays[date.weekday()],
-        "utc_time": utc_time,
+        "utc_time": f"{utc_time}Z",
         "track": track,
         "github_file_url": "https://github.com/Ifechukwu001/hng-stage_one/blob/main/app.py",
         "github_repo_url": "https://github.com/Ifechukwu001/hng-stage_one",
